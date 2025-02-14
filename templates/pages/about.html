@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'portfolio:index' %}">Home</a></li>
+            <li><a href="{% url 'portfolio:about' %}">About</a></li>
+            <li><a href="{% url 'portfolio:projects' %}">Projects</a></li>
+            <li><a href="{% url 'portfolio:contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="about-container">
+        <img src="{% static 'images/zzz.jpg' %}" alt="My Photo">
+        <div class="text-box">
+        </div>
+
+<div class="hero">
+    <div class="overlay">
+        <h1>About Me</h1>
+        <p>Hello! I'm Kirk, a 3rd Year Bachelor of Science in Information Technology (BSIT) student.
+        I'm passionate about technology, especially in areas like web development, cybersecurity, and database management
+        Currently, I'm learning Python, Django, and front-end development as part of my studies.
+        In my free time, I enjoy playing Valorant and Dota2.</p>
+        
+    </div>
+</div>
+
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'portfolio:index' %}">Home</a></li>
+            <li><a href="{% url 'portfolio:about' %}">About</a></li>
+            <li><a href="{% url 'portfolio:projects' %}">Projects</a></li>
+            <li><a href="{% url 'portfolio:contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+<div class="contact-container">
+    <h1>Contact Me</h1>
+    <p>Feel free to connect with me through my social media accounts!</p>
+
+    <div class="social-box"> 
+        <div class="social-icons">
+            <a href="https://www.facebook.com/kirkaldous.nobles" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/kirk.aldouss/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://github.com/Kirkkkkk0529" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="mailto:kirknobles7@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

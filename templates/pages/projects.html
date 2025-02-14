@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'portfolio:index' %}">Home</a></li>
+            <li><a href="{% url 'portfolio:about' %}">About</a></li>
+            <li><a href="{% url 'portfolio:projects' %}">Projects</a></li>
+            <li><a href="{% url 'portfolio:contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="timeline">
+        <h2>My Projects</h2>
+        <ul>
+            <li>
+                <span>1st Year Projects</span>
+                <p>1. A simple web page with social media logos that link to their respective platforms when clicked.</p>
+            </li>
+            <li>
+                <span>2nd Year Projects</span>
+                <p>1. E-Commerce System (PHP Framework)</p>
+                <p>2. RFID-Based Attendance Monitoring System</p>
+            </li>
+            <li>
+                <span>3rd Year Projects</span>
+                <p>1. Tutor and Student Management System</p>
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+  
+    <nav>
+        <ul>
+            <li><a href="{% url 'portfolio:index' %}">Home</a></li>
+            <li><a href="{% url 'portfolio:about' %}">About</a></li>
+            <li><a href="{% url 'portfolio:projects' %}">Projects</a></li>
+            <li><a href="{% url 'portfolio:contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="overlay">
+            <h1>Hi, I'm Kirk Aldous Nobles</h1>
+            <p>Aspiring Web Developer & BSIT Student</p>
+            
+        </div>
+    </div>
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-php"></i>
+                <p>PHP</p>
+            </div>
+            <div class="skill">
+                <i class="fa-solid fa-database"></i>
+                <p>MySQL</p>
+            </div>
+            <div class="skill">
+                <i class="fa-solid fa-database"></i>
+                <p>Django</p>
+            </div>
+            <div class="skill">
+                <i class="fa-solid fa-database"></i>
+                <p>ChatGPT <3</p>
+            </div>
+        </div>
+    </section>
+    
+
+</body>
+</html>
